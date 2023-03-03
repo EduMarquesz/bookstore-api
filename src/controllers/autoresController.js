@@ -2,8 +2,8 @@ import autores from "../models/Autor.js";
 
 class AutorController {
     static listarAutores = (req, res) => {
-        autores.find((err, livros) => {
-            res.status(200).json(livros);
+        autores.find((err, autores) => {
+            res.status(200).json(autores);
         }); // esse autores.find deveria estar em services e não em controller
     };
 
